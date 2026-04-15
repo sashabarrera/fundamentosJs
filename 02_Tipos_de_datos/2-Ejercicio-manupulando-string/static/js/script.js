@@ -35,8 +35,9 @@ y la region de ${region.toLocaleLowerCase()}.`);
 // Muestre la palabra en MAYÚSCULAS
 // Indique el tipo de dato
 let lenguaje = "Python";
-console.log(`La palabra ${lenguaje} tiene ${lenguaje.length} caracteres.`)
+console.log(`La palabra ${lenguaje} tiene ${lenguaje.length} caracteres.)
 console.log(lenguaje.toUpperCase());
+\nTipo de dato (lenguaje) es: ${typeof lenguaje}`);
 
 // 4️⃣ Frase completa analizada
 // Crea la variable:
@@ -45,10 +46,12 @@ console.log(lenguaje.toUpperCase());
 // Indique la cantidad de caracteres
 // Verifique si contiene la palabra "JavaScript"
 // Muestre el mensaje completo en minúsculas
-let mesaje ="Me gusta programar en JvaScript";
+
+let mensaje = "Me gusta programar en JvaScript";
 console.log(`Mensaje inicial: "${mensaje}"
-    \nMensaje en minuscula: "$${mensaje.toLocaleLowerCase()}").
-    \nBuscando palabras Javascript dentro
+\nMensaje en minusculas: "${mensaje.toLocaleLowerCase()}".
+\nBuscando palabras Javascript dentro: ${mensaje.includes("Javascript")}
+\nCantidad de caracteres en mensaje: ${mensaje.length}.`);
 
 // 5️⃣ Lista con búsqueda y transformación
 // Crea la variable:
@@ -57,6 +60,11 @@ console.log(`Mensaje inicial: "${mensaje}"
 // Si existe la palabra "aceite"
 // El texto completo en MAYÚSCULAS
 // La cantidad total de caracteres
+let compras = "arroz, fideos, aceite, sal";
+console.log(`mensaje inicial ${mensaje.includes("aceite")}
+\nMensaje en Mayuscula: "${aceite.toUpperCase()}
+\nCantidad de caracteres en mensaje: ${mensaje.length}.`);
+
 
 // 6️⃣ Conversión + análisis
 // Crea las variables:
@@ -67,6 +75,10 @@ console.log(`Mensaje inicial: "${mensaje}"
 // Mostrar el número convertido
 // Indicar su tipo de dato
 // Indicar cuántos caracteres tiene
+let numeroCasa = "456"
+let numeroCasaTexto= String(nuemroCasa);
+console.log(`Mi numero de casa ${nuemroCasaTexto}`);
+${typeof nuemrtoCasaTexto} tiene
 
 // 7️⃣ Identificación personal extendida
 // Crea las variables:
