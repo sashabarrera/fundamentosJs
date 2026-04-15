@@ -25,19 +25,19 @@ console.log(`La palabra ${palabra} tiene ${palabra.length} letras.`);
 
 //Crear una frese y contar sus caracteres.
 let frase = "Mañana hace calor";
-console.log(`La frase ${frase} tiene ${frase.length} caracteres.`);
+console.log(`.toUpperCase`);
 
 // Metodos comunes en JS para formatear texto
 //Transformar texto en Mayúscalas .toUpperCase()
 let texto1 = "JAVAsCript eS Lo Mejor";
 console.log(texto1.toUpperCase());
 
-//Trnsformar texto a minuscula .toLowerCase
+//Transformar texto a minuscula .toLowerCase
 console.log(texto1.toLowerCase());
 
 //Buscar un texto dentro de un string
 let texto2 = "Leche, azucar, peras, huevos, harina";
-console.log(texto2.includes("peras")); // True}
+console.log(texto2.includes("peras")); // True
 
 //Convertir una variable a texto
 let telefono = 89182920
