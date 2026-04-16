@@ -12,7 +12,9 @@ console.log("Conexion corrercta con js...");
 // 👉 Todo en un solo mensaje.
 let nombre ="Camila";
 let edad ="25";
-console.log(`Su nombre es: ${nombre} y su edad es ${edad}`);
+console.log(`Su nombre es: ${nombre} y su edad es ${edad}
+\nTipo de dato (edad) es: ${typeof edad} `);
+
 // 2️⃣ Ubicación con transformación
 // Crea las variables:
 // comuna: Maipú
@@ -35,9 +37,9 @@ y la region de ${region.toLocaleLowerCase()}.`);
 // Muestre la palabra en MAYÚSCULAS
 // Indique el tipo de dato
 let lenguaje = "Python";
-console.log(`La palabra ${lenguaje} tiene ${lenguaje.length} caracteres.)
-console.log(lenguaje.toUpperCase());
-\nTipo de dato (lenguaje) es: ${typeof lenguaje}`);
+console.log(`La palabra ${lenguaje.toUpperCase()} tiene ${lenguaje.length} caracteres. 
+\n su tipo de dato es: {typeof lenguaje}`);
+
 
 // 4️⃣ Frase completa analizada
 // Crea la variable:
@@ -47,7 +49,7 @@ console.log(lenguaje.toUpperCase());
 // Verifique si contiene la palabra "JavaScript"
 // Muestre el mensaje completo en minúsculas
 
-let mensaje = "Me gusta programar en JvaScript";
+let mensaje = "Me gusta programar en JavaScript";
 console.log(`Mensaje inicial: "${mensaje}"
 \nMensaje en minusculas: "${mensaje.toLocaleLowerCase()}".
 \nBuscando palabras Javascript dentro: ${mensaje.includes("Javascript")}
@@ -75,10 +77,11 @@ console.log(`mensaje inicial ${mensaje.includes("aceite")}
 // Mostrar el número convertido
 // Indicar su tipo de dato
 // Indicar cuántos caracteres tiene
-let numeroCasa = "456"
-let numeroCasaTexto= String(nuemroCasa);
-console.log(`Mi numero de casa ${nuemroCasaTexto}`);
-${typeof nuemrtoCasaTexto} tiene
+let numeroCasa = "456";
+let numeroCasaTexto= String(numeroCasa);
+console.log(`Mi numero de casa ${numeroCasaTexto} es de tipo: ${typeof numerotoCasaTexto} tiene
+    ${numeroCasaTexto.length} letras`);
+
 
 // 7️⃣ Identificación personal extendida
 // Crea las variables:
@@ -88,7 +91,11 @@ ${typeof nuemrtoCasaTexto} tiene
 // Muestre el nombre completo
 // Indique cuántos caracteres tiene el nombre completo (incluyendo espacio)
 // Muestre todo en MAYÚSCULAS
-
+let name ="Diego";
+let lastname ="Rojas";
+let nombreCompleto = `${name} ${lastname}`
+console.log(`El nombre es: ${name} y el apellido es: ${lastname}
+\n el nombre completo tiene: ${nombreCompleto.length} caracteres`);
 // 8️⃣ Verificación de contenido
 // Crea la variable:
 // frase: Hoy aprenderemos sobre strings
@@ -96,7 +103,10 @@ ${typeof nuemrtoCasaTexto} tiene
 // Si contiene la palabra "strings"
 // La frase en MAYÚSCULAS
 // La cantidad de caracteres
-
+let frase = "Hoy aprenderemos sobre strings"
+console.log(`La frase ${frase} contiene la palabra "strings":
+    ${frase.includes("strings")}`);
+    console.log(`${frase.toUpperCase()} - tiene ${frase.length} caracteres `);
 // 9️⃣ Comparación de formatos
 // Crea la variable:
 // texto: Programar es divertido
@@ -105,13 +115,23 @@ ${typeof nuemrtoCasaTexto} tiene
 // El texto en minúsculas
 // El texto en mayúsculas
 // La cantidad de caracteres
+let texto ="Programar es divertido";
+console.log(`Texto original${texto}
+\nTexto en minuscula: ${texto.toLocaleLowerCase()}
+\n Texto en mayuscula: ${texto.toLocaleUpperCase()}
+\n texto tiene: ${texto.length} carateres`);
 
 // 🔟 Desafío completo integrado
 // Crea las variables:
-// curso: 4C
+// curso: 3C
 // anio: 2026
 // Debes mostrar un mensaje que:
 // Indique el curso y año
 // Convierta el año a texto
 // Indique el tipo de dato del año convertido
 // Muestre todo el mensaje en MAYÚSCULAS
+let curso = "3C";
+let anio = "2026";
+let anioTexto = String(anio); //anio a texto
+console.log(`Curso ${curso} del año ${anioTexto} 
+\nAño es de tipo: ${typeof anioTexto} `.toUpperCase());
