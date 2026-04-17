@@ -62,9 +62,9 @@ console.log(`Mensaje inicial: "${mensaje}"
 // Si existe la palabra "aceite"
 // El texto completo en MAYÚSCULAS
 // La cantidad total de caracteres
-let compras = "arroz, fideos, aceite, sal";
+let compras ="arroz, fideos, aceite, sal" 
 console.log(`mensaje inicial ${mensaje.includes("aceite")}
-\nMensaje en Mayuscula: "${aceite.toUpperCase()}
+\nMensaje en Mayuscula: ${compras.toUpperCase()}
 \nCantidad de caracteres en mensaje: ${mensaje.length}.`);
 
 
