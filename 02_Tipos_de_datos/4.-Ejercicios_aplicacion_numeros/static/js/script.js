@@ -30,7 +30,7 @@ function edadProyectada(){
     let edad = 16;
     alert(`Mi edad es: ${edad}
         \nEn 5 años tendré: ${edad + 5}
-        \nHace 10 años tenia:{edad - 10}`);
+        \nHace 10 años tenia:${edad - 10}`);
 };
 
 // 🔹 Ejercicio 2: Compra con descuento
@@ -39,9 +39,9 @@ function edadProyectada(){
 // Muestra el resultado
 
 function compraDescuento(){
-let producto = 25.000;
-alert(`Calcular: ${producto}
-    \nCon descunto es:`)
+    let precioProducto = 25000;
+    let total = precioProducto - (precioProducto * 20);
+    alert(`El precio final del producto es con descuento:` + total);
 }
 
 // 🔹 Ejercicio 3: Promedio de notas
@@ -50,8 +50,12 @@ alert(`Calcular: ${producto}
 // Redondea el resultado usando Math.round()
 
 function promedioNotas(){
-
-}
+let nota1 = 5.4;
+let nota2 = 6.2;
+let nota = 6.6;
+alert(`Se tiebe 3 notas ${nota1}, ${nota2}, ${nota3}
+    \nEl promedio de estas es: ${(nota1 + nota2 + nota3) /3}
+    y redondeado serla ${Math.round((nota1 + nota2 +  nota3)/3)}`)
 
 // 🔹 Ejercicio 4: Temperatura
 // Declara una temperatura actual en grados Celsius:
@@ -60,7 +64,14 @@ function promedioNotas(){
 // Muestra el resultado final
 
 function calcularTemperatura(){
-
+let temperatura = 15;
+let aumentada = temperatura + 3;
+let disminuida = temperatura - 5;
+let resultado = temperatura + 3 -5;
+alert(`La temperartura actual es: ${temperatura}
+    \nLa temperatura aumentada es: ${aumentada}
+    \nLa temperatura disminuida es: ${disminuida}
+    \nEl resultado de la temperatura es:${resultado}`)
 }
 
 // 🔹 Ejercicio 5: Sueldo semanal
@@ -70,7 +81,13 @@ function calcularTemperatura(){
 // Muestra el nuevo sueldo
 
 function calcularSueldo(){
-
+let valorHora = 8000;
+let cantidadHora = 45;
+let sueldo = valorHora * cantidadHora;
+cantidadHora += 5;
+let sueldoNuevo = valorHora * cantidadHora;
+alert(`sueldo actual: $${sueldo}
+    \nSueldo nuevo con incremento: $${sueldoNuevo}`)
 }
 
 // 🔹 Ejercicio 6: División y resto
@@ -78,19 +95,25 @@ function calcularSueldo(){
 // Calcula la división
 // Calcula el módulo (%)
 // Explica el resultado en consola
-
-
+function calculaDivision(){
+    let num1 = 6;
+    let num2 = 4;
+    alert(`Num1: ${num1 / num2}
+    \n el num1 es igual `)
+}
 
 // 🔹 Ejercicio 7: Comparación de números
 // Declara dos números:
 // Muestra si el primero es mayor que el segundo
 // Verifica si uno de ellos es igual a 10
 
+
 // 🔹 Ejercicio 8: Notación científica aplicada
 // Declara:
 // Una población usando notación científica (ej: 1e6)
 // Divide esa población en 4 grupos
 // Muestra el resultado
+
 
 // 🔹 Ejercicio 9: Potencia y cálculo combinado
 // Calcula:
