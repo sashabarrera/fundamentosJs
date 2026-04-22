@@ -26,11 +26,11 @@ console.log("Conexion exitosa js...");
 // Tu edad hace 10 años
 // Muestra ambos resultados en alert.
 
-function edadProyectada(){
+function edadProyectada() {
     let edad = 16;
     alert(`Mi edad es: ${edad}
         \nEn 5 años tendré: ${edad + 5}
-        \nHace 10 años tenia:${edad - 10}`);
+        \nHace 10 años tenia:${edad - 10}`)
 };
 
 // 🔹 Ejercicio 2: Compra con descuento
@@ -38,7 +38,7 @@ function edadProyectada(){
 // Calcula el precio final
 // Muestra el resultado
 
-function compraDescuento(){
+function compraDescuento() {
     let precioProducto = 25000;
     let total = precioProducto - (precioProducto * 20);
     alert(`El precio final del producto es con descuento:` + total);
@@ -49,63 +49,71 @@ function compraDescuento(){
 // Calcula el promedio
 // Redondea el resultado usando Math.round()
 
-function promedioNotas(){
-let nota1 = 5.4;
-let nota2 = 6.2;
-let nota = 6.6;
-alert(`Se tiebe 3 notas ${nota1}, ${nota2}, ${nota3}
-    \nEl promedio de estas es: ${(nota1 + nota2 + nota3) /3}
-    y redondeado serla ${Math.round((nota1 + nota2 +  nota3)/3)}`)
+function promedioNotas() {
+    let nota1 = 5.4;
+    let nota2 = 6.2;
+    let nota3 = 6.6;
+    alert(`Se tiebe 3 notas ${nota1}, ${nota2}, ${nota3}
+    \nEl promedio de estas es: ${(nota1 + nota2 + nota3) / 3}
+    y redondeado serla ${Math.round((nota1 + nota2 + nota3) / 3)}`)
+}
+    // 🔹 Ejercicio 4: Temperatura
+    // Declara una temperatura actual en grados Celsius:
+    // Auméntala en 3 grados
+    // Luego disminúyela en 5 grados
+    // Muestra el resultado final
 
-// 🔹 Ejercicio 4: Temperatura
-// Declara una temperatura actual en grados Celsius:
-// Auméntala en 3 grados
-// Luego disminúyela en 5 grados
-// Muestra el resultado final
-
-function calcularTemperatura(){
-let temperatura = 15;
-let aumentada = temperatura + 3;
-let disminuida = temperatura - 5;
-let resultado = temperatura + 3 -5;
-alert(`La temperartura actual es: ${temperatura}
+    function calcularTemperatura() {
+        let temperatura = 15;
+        let aumentada = temperatura + 3;
+        let disminuida = temperatura - 5;
+        let resultado = temperatura + 3 - 5;
+        alert(`La temperartura actual es: ${temperatura}
     \nLa temperatura aumentada es: ${aumentada}
     \nLa temperatura disminuida es: ${disminuida}
     \nEl resultado de la temperatura es:${resultado}`)
-}
+    }
 
-// 🔹 Ejercicio 5: Sueldo semanal
-// Un trabajador gana $8.000 por hora y trabaja 45 horas:
-// Calcula su sueldo
-// Si trabaja 5 horas extra, agrégalas usando incremento
-// Muestra el nuevo sueldo
+    // 🔹 Ejercicio 5: Sueldo semanal
+    // Un trabajador gana $8.000 por hora y trabaja 45 horas:
+    // Calcula su sueldo
+    // Si trabaja 5 horas extra, agrégalas usando incremento
+    // Muestra el nuevo sueldo
 
-function calcularSueldo(){
-let valorHora = 8000;
-let cantidadHora = 45;
-let sueldo = valorHora * cantidadHora;
-cantidadHora += 5;
-let sueldoNuevo = valorHora * cantidadHora;
-alert(`sueldo actual: $${sueldo}
+    function calcularSueldo() {
+        let valorHora = 8000;
+        let cantidadHora = 45;
+        let sueldo = valorHora * cantidadHora;
+        cantidadHora += 5;
+        let sueldoNuevo = valorHora * cantidadHora;
+        alert(`sueldo actual: $${sueldo}
     \nSueldo nuevo con incremento: $${sueldoNuevo}`)
-}
+    }
 
-// 🔹 Ejercicio 6: División y resto
-// Declara dos números:
-// Calcula la división
-// Calcula el módulo (%)
-// Explica el resultado en consola
-function calculaDivision(){
-    let num1 = 6;
-    let num2 = 4;
-    alert(`Num1: ${num1 / num2}
-    \n el num1 es igual `)
-}
+    // 🔹 Ejercicio 6: División y resto
+    // Declara dos números:
+    // Calcula la división
+    // Calcula el módulo (%)
+    // Explica el resultado en consola
+    function calculaDivision() {
+        let num1 = 6;
+        let num2 = 4;
+        alert(`El resultado de la division es de: ${num1 / num2}
+        \ny el resto es de: ${num1 % num2}
+        \nel resultado se dio gracias a que se dividio 6 y 4 y luego se saco el resto`)
+    };
 
 // 🔹 Ejercicio 7: Comparación de números
 // Declara dos números:
 // Muestra si el primero es mayor que el segundo
 // Verifica si uno de ellos es igual a 10
+function comparaciónNumeros(){
+    let num6 = 7;
+    let num10 = 9;
+    alert(`num6 es mayor que num10: ${num6 > num10}
+        \nel num10 es igual a 10: ${num10 === 10}`)
+}
+
 
 
 // 🔹 Ejercicio 8: Notación científica aplicada
@@ -113,16 +121,31 @@ function calculaDivision(){
 // Una población usando notación científica (ej: 1e6)
 // Divide esa población en 4 grupos
 // Muestra el resultado
-
+function notacion(){
+    let población = 1e9
+    alert(`la cantidadb de poblacion se dividira en 4 grupos que es: ${población / 4}`)
+}
 
 // 🔹 Ejercicio 9: Potencia y cálculo combinado
 // Calcula:
 // 3 elevado a 4
 // Luego multiplícalo por 2
 // Resta 10 al resultado final
+function pontencia(){
+    let calcular = 3;
+    let num55 =4;
+    alert(`3 elevado a 4 es igual a: ${3**4}
+        \nmultiplcado por 2: ${(3**4)*2}
+        \ny el resultado en 10 es: ${(3**4*2)-10}`)
 
+}
 // 🔹 Ejercicio 10: Dado aleatorio 🎲
 // Simula el lanzamiento de un dado:
 // Genera un número entre 1 y 6
 // Muestra el resultado
 // Indica si el número es mayor o igual a 4 (gana) o menor (pierde)
+function dado(){
+    let dado = Math.floor(Math.random () *6)+1;
+    alert(`tirar dado: ${dado}
+        \nsi el numero es mayor a 4 o igual:${dado >= 4}`)
+}
