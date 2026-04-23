@@ -40,7 +40,7 @@ function edadProyectada() {
 
 function compraDescuento() {
     let precioProducto = 25000;
-    let total = precioProducto - (precioProducto * 20);
+    let total = precioProducto - (precioProducto * 0.20);
     alert(`El precio final del producto es con descuento:` + total);
 }
 
