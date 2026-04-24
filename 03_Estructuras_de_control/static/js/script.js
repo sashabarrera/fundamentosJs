@@ -61,6 +61,7 @@ OPERADORES DE COMPARACION
 === Estricta igualdad
 !== Distinto
 */ 
+
 //Ejemplo de distinto
 let num = 10;
 let num2 = 5;
