@@ -33,8 +33,12 @@ function ejercicio12() {
 
 function ejercicio13() {
 let correo="ejemplo@gmail.com";
-let texto="correo valido";
-alert(`El correo convertido es: ${correo} y el resultado es: ${texto.toLowerCase()}`)
+if(correo.toLocaleLowerCase >= 15){
+    alert(`El correo convertido es: ${correo.length} y el resultado es: correo válido`);
+}else {
+    alert(`El correo convertido es: ${correo.length} y resulado es: correo muy corto`);
+}
+
 }
 
 
@@ -43,13 +47,13 @@ alert(`El correo convertido es: ${correo} y el resultado es: ${texto.toLowerCase
 // `La frase "Estoy aprendiendo JavaScript" tiene 28 caracteres y corresponde a una frase larga`
 
 function ejercicio14() {
-let frase="Estoy aprendiendo JavaScript";
-if(frase){
+let frase="Estoy aprendiendo";
+if(frase.length >= 20){
     alert(`tiene ${frase.length} y es una frase larga `);
-}else if (frase){
-    alert(`tiene ${frase.length} y es frase mediana tiene entre 11 y 20 caracteres`);
+}else if (frase.length >= 11){
+    alert(`tiene ${frase.length} y es frase mediana `);
 }else{
-    alert(`tiene  ${frase.length} y es frase corta tiene entre 10 o menos caracteres`)
+    alert(`tiene  ${frase.length} y es frase corta`)
 }
 }
 
