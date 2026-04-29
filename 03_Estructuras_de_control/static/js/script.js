@@ -10,8 +10,8 @@ Estructura basica:(Sintaxis --> Reglas del lenguaje de programacion)
 if(condicion){
 //codigo que se ejecuta si la condicion es verdadera.
 } else{
-    //codiogo que se ejecuta si la condicion es falsa
-    }
+    //codigo que se ejecuta si la condicion es falsa
+}
 */
 
 //Ejemplo 1: (numerico) -- IF
