@@ -32,13 +32,14 @@ function ejercicio12() {
 // `El correo convertido es: ejemplo@gmail.com y el resultado es: correo válido`
 
 function ejercicio13() {
-let correo="ejemplo@gmail.com";
-if(correo.toLocaleLowerCase >= 15){
-    alert(`El correo convertido es: ${correo.length} y el resultado es: correo válido`);
-}else {
-    alert(`El correo convertido es: ${correo.length} y resulado es: correo muy corto`);
-}
+    let correo = "ejemPlo@gmaiL.coM";
+    let correoMinusc = correo.toLocaleLowerCase()
+    if (correo.length >= 15) {
+        alert(`El correo convertido es: ${correoMinusc} y el resultado es: correo válido ${correo.length} caracteres`);
 
+    } else {
+        alert(`El correo convertido es: ${correoMinusc} y resulado es: correo demasiado corto ${correo.length} caracteres`)
+    }
 }
 
 
@@ -47,14 +48,14 @@ if(correo.toLocaleLowerCase >= 15){
 // `La frase "Estoy aprendiendo JavaScript" tiene 28 caracteres y corresponde a una frase larga`
 
 function ejercicio14() {
-let frase="Estoy aprendiendo";
-if(frase.length >= 20){
-    alert(`tiene ${frase.length} y es una frase larga `);
-}else if (frase.length >= 11){
-    alert(`tiene ${frase.length} y es frase mediana `);
-}else{
-    alert(`tiene  ${frase.length} y es frase corta`)
-}
+    let frase = "Estoy aprendiendo JavaScritp";
+    if (frase.length >= 20) {
+        alert(`tiene ${frase.length} y es una frase larga `);
+    } else if (frase.length >= 11) {
+        alert(`tiene ${frase.length} y es frase mediana `);
+    } else {
+        alert(`tiene  ${frase.length} y es frase corta`)
+    }
 }
 
 
@@ -63,6 +64,10 @@ if(frase.length >= 20){
 // `El producto TECLADO tiene un precio final de $45000`
 
 function ejercicio15() {
+        let producto = "teclado";
+        let precio = 5000;
+        let descuento = 0.1;
+        alert(`el producto ${producto.toLocaleUpperCase()} tiene un pecio final $${precio - (precio * descuento)}`);
+    }
 
-}
 
