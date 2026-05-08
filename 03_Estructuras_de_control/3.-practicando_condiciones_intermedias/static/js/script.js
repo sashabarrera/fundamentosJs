@@ -78,7 +78,24 @@ function ejercicio15() {
 //Mayor o igual a 100.000 → Cliente Premium (20% descuento)
 //Mayor o igual a 50.000 → Cliente Frecuente (10% descuento)
 //Menor a 50.000 → Cliente Normal (sin descuento)
-
+function ejercicio16(){
+    let cliente="Pepe";
+    let producto="Televisor";
+    let precio=149990;
+    let decuentoP=0.2;
+    let decuentoF=0.1;
+    if(precio >= 100000){
+        alert(`el cliente: ${cliente.toUpperCase()} compro una ${producto} por un precio original de: ${precio}
+        \nsu precio con decuento es: ${precio - (precio * decuentoP)} porque ${cliente} es un cliemet premium`);
+    }else if (precio >= 50000){
+        alert(`el cliente ${cliente.toUpperCase()} compro una ${producto} por un precio original de:
+        ${precio}
+        \nsu precio con decuento es: ${precio - (precio * decuentoF)} porque ${cliente} es un cliente frecuente `);
+    }else {
+        alert(`el cliente ${cliente.toUpperCase()} compro una ${producto} por un precio original de: ${precio}
+        \nNo tiene decuento po lo que queda en ${precio} porque ${clienet} es un cliente normal`);
+    }
+}
 ///Mostrar:
 //Nombre del cliente en mayúsculas
 //Producto en minúsculas
@@ -95,7 +112,15 @@ function ejercicio15() {
 //70 o más → Bueno
 //Menor a 70 → Insuficiente
 function Analizar() {
-
+let nombreCliente = "maria lopez"
+    let precioCompra = 120000
+    if (precioCompra >= 100000) {
+        alert(`El cliente ${nombreCliente.toUpperCase()} es un cliente Premium y tiene un precio final de $${precioCompra - (precioCompra * 0.2)}`)
+    } else if (precioCompra >= 50000) {
+        alert(`El cliente ${nombreCliente.toUpperCase()} es un cliente Frecuente y tiene un precio final de $${precioCompra - (precioCompra * 0.1)}`)
+    } else {
+        alert(`El cliente ${nombreCliente.toUpperCase()} es un cliente Normal y tiene un precio final de $${precioCompra}`)
+    }
 }
 //Mostrar:
 //Frase transformada
@@ -208,13 +233,13 @@ function producto(){
     let productoMinuscula= producto.toLocaleLowerCase();
     if(precio){
         alert(`El producto ${productoMinuscula} Producto de lujo.
-            \nPrecio: ${precio}.`)
+            \nPrecio: ${precio}.`);
     }else if(precio1 >= 0.85){
         alert(`El producto ${productoMinuscula} Producto premion.
-            \nPrecio: ${precio1}.`)
+            \nPrecio: ${precio1}.`);
     }else if(precio2 >= 0.1){
         alert(`El producto ${productoMinuscula} Producto estandar.
-            \nPrecio: ${precio2}`)
+            \nPrecio: ${precio2}`);
     }
     }
 
